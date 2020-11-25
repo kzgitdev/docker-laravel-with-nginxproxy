@@ -1,0 +1,13 @@
+version: "3.8"
+
+services: 
+  proxy:
+    image: jwilder/nginx-proxy:latest
+    container_name: proxy
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ./log/nginx:/var/log/nginx
+    ports:
+      - "80:80"
+      - "443:443"
