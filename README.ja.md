@@ -1,11 +1,12 @@
 # README.ja.md
 
 ## 概要
-nginx-proxy(jwilder/nginx-proxy:latest)をリバースプロキシとして活用し、バックエンドサーバーにLarvel8を配置する構成です。
-composerのインストール
-一般ユーザーを追加
-Docker起動後に
-
+```
+- nginx-proxy(jwilder/nginx-proxy:latest)をリバースプロキシとして活用し、バックエンドサーバーにLarvel8を配置する構成です。
+- composerのインストール
+- 一般ユーザーを追加
+- Docker起動後にsetup_laravel.shシェルスクリプトでLaravelをインストールします。
+```
 
 ## 開発環境
 <details><summary>System info</summary>
