@@ -92,7 +92,7 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 </details>
 
 ## 使い方
-<details><summary>事前準備</summary>
+<details>
 <div>
  
  ```
