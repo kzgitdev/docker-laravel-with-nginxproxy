@@ -58,8 +58,30 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 ## コンテナ
 <details><summary>ディレクトリ構成</summary>
 <div>
-- ああああ
-- いいいい
+/docker
++-- /proxy
+|   +-- /log
+|       +-- /nginx
+|           +-- access.log
+|           +-- errir.log
+|   +-- docker-compose.yml
++-- /example.com
+|   +-- /app1
+|   +-- begin-with-the-crazy-ideas.textile
+|   +-- on-simplicity-in-technology.markdown
++-- _includes
+|   +-- footer.html
+|   +-- header.html
++-- _layouts
+|   +-- default.html
+|   +-- post.html
++-- _posts
+|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
+|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
++-- _data
+|   +-- members.yml
++-- _site
++-- index.html
 </div>
 </details>
 
