@@ -102,6 +102,9 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 3 laravel.example.comの起動をします
   $cd example.com/laravel
   $docker-compose --build -d
+ 4 appコンテナにログインして、Laraelをインストールする
+  $docker exec -it sv-laravel-app bash
+  $/tmp/setup_laravel.sh
  
  ```
  
