@@ -145,7 +145,7 @@ phpinfo();
  </div>
  </details>
  
- <details><summary></summary>
+ <details><summary>redisサーバ起動の確認</summary>
  <div>
   コンテナにログイン
   $ docker exec -it sv-laravel-redis bash
