@@ -3,8 +3,8 @@
 ## 概要
 nginx-proxy(jwilder/nginx-proxy:latest)をリバースプロキシとして活用し、バックエンドサーバーにLarvel8を配置する構成です。
 
-## 開発環境
-<details><summary>### システム情報</summary>
+## 
+<details><summary>開発環境</summary>
 <div>
 ```
 $ cat /etc/lsb-release
