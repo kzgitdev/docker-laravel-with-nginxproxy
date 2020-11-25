@@ -110,3 +110,28 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
  
 </div>
 </details>
+
+## phpモジュールの確認
+<details>
+<div>
+ 
+```
+/src/public/index.php
+
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request using
+| the application's HTTP kernel. Then, we will send the response back
+| to this client's browser, allowing them to enjoy our application.
+|
+*/
+// add here
+phpinfo();
+
+```
+ 
+</div>
+</details>
