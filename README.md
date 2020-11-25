@@ -64,6 +64,36 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 
 
 ## Directory structure
+## Directory structure
+
+<details><summary>ディレクトリ構成</summary>
+<div>
+
+```
+/docker
++-- /proxy
+|   +-- /log
+|       +-- /nginx
+|           +-- access.log
+|           +-- error.log
+|   +-- docker-compose.yml
++-- /example.com
+|   +-- /laravel <= subdomain: laravel.example.com
+|       +-- /build
+|           +-- /nginx
+|               +-- default.conf
+|           +-- /php
+|               +-- Dockerfile
+|               +-- php.ini
+|               +-- setup_laravel.sh
+|       +-- /db <= mount point: /var/lib/mysql
+|       +-- /src // laravel install dir
+|       +-- .env
+|       +-- docker-compose.yml
+```
+
+</div>
+</details>
 
 
 
