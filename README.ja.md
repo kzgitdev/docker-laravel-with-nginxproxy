@@ -3,9 +3,10 @@
 ## 概要
 nginx-proxy(jwilder/nginx-proxy:latest)をリバースプロキシとして活用し、バックエンドサーバーにLarvel8を配置する構成です。
 
-## 
+##
 <details><summary>開発環境</summary>
 <div>
+
 ```
 $ cat /etc/lsb-release
 DISTRIB_ID=Ubuntu
@@ -50,6 +51,7 @@ docker-py version: 4.3.1
 CPython version: 3.7.7
 OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 ```
+
 </div>
 </details>
 ## 使い方
