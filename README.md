@@ -68,7 +68,7 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 <div>
 
 ```
-/docker
+
 +-- /proxy
 |   +-- /log
 |       +-- /nginx
