@@ -74,7 +74,7 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 |           +-- error.log
 |   +-- docker-compose.yml
 +-- /example.com
-|   +-- /laravel // <= subdomain: laravel.example.com
+|   +-- /laravel <= subdomain: laravel.example.com
 |       +-- /build
 |           +-- /nginx
 |               +-- default.conf
@@ -82,7 +82,7 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 |               +-- Dockerfile
 |               +-- php.ini
 |               +-- setup_laravel.sh
-|       +-- /db // <= mount point: /var/lib/mysql
+|       +-- /db <= mount point: /var/lib/mysql
 |       +-- /src // laravel install dir
 |       +-- .env
 |       +-- docker-compose.yml
@@ -138,7 +138,7 @@ phpinfo();
 </div>
 </details>
 
-<details><summary>adminer確認</summary>
+<details><summary>adminer起動の確認</summary>
 <div>
  ブラウザから　http://admr.laravel.example.com　にアクセスする
  
