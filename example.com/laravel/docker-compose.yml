@@ -1,0 +1,78 @@
+version: "3.8"
+
+services:
+  # nginx
+  nginx:
+    image: nginx:$NGINX_TAG
+    container_name: sv-app1-web
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./build/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./src:/var/www/html
+    environment: 
+      - VIRTUAL_HOST=app1.service.lan
+      - VIRTUAL_PORT=80
+    networks:
+      - proxy_default
+
+  # app
+  app:
+    # image: php:$PHP_TAG
+    container_name: sv-app1-app
+    build:
+      context: ./build/php
+      dockerfile: Dockerfile
+      args:
+        - USERNAME=$USERNAME
+        - UID=$UID
+        - PHP_TAG=$PHP_TAG
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./src:/var/www/html
+    environment: 
+      - VIRTUAL_PORT=9000
+    networks:
+      - proxy_default
+
+  # mariadb
+  mariadb:
+    image: mariadb:$MARIADB_TAG
+    container_name: sv-app1-db
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    environment: 
+      - MYSQL_DATABASE=$MYSQL_DATABASE
+      - MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD
+      - MYSQL_PASSWORD=$MYSQL_PASSWORD
+      - MYSQL_USER=$MYSQL_USER
+      - VIRTUAL_PORT=3306
+    networks:
+      - proxy_default
+
+  # redis
+  redis:
+    image: redis:$REDIS_TAG
+    container_name: sv-app1-redis
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    environment: 
+      - VIRTUAL_PORT=6379
+    networks:
+      - proxy_default
+
+  # adminer
+  adminer:
+    image: adminer:$ADMINER_TAG
+    container_name: sv-app1-admr
+    environment: 
+      - VIRTUAL_HOST=admr.app1.service.lan
+      - VIRTUAL_PORT=8080
+    expose:
+      - 8080
+    networks:
+      - proxy_default
+
+networks:
+  proxy_default:
+    external: true
