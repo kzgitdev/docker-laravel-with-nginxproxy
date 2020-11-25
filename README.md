@@ -115,7 +115,7 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 ````
 ## Check containers operation
 
-<detail><summary>Check installed modules in PHP:7.4-FPM</summary>
+<details><summary>Check installed modules in PHP:7.4-FPM</summary>
 <div>
 
 ```
@@ -139,5 +139,5 @@ phpinfo();
 access http://laravel.example.com with web browser.
 
 </div>
-</detail>
+</details>
 
