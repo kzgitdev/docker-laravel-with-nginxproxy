@@ -142,7 +142,7 @@ access http://laravel.example.com with web browser.
 </div>
 </details>
 
-<detail><summary>Check mariadb server operation</summary>
+<details><summary>Check mariadb server operation</summary>
 <div>
 
 ```
@@ -152,18 +152,18 @@ mysql  Ver 15.1 Distrib 10.5.8-MariaDB, for debian-linux-gnu (x86_64) using read
 ```
 
 </div>
-</detail>
+</details>
 
 
-<detail><summary>Check adminer </summary>
+<details><summary>Check adminer </summary>
 <div>
 access http://admr.laravel.example.com with web browser.
 
 </div>
-</detail>
+</details>
 
 
-<detail><summaryCheck redis server operation></summary>
+<details><summaryCheck redis server operation></summary>
 <div>
 </div>
 login redis server and check version.
@@ -173,4 +173,4 @@ $ docker exec -it sv-laravel-redis bash
 # redis-server -v
 Redis server v=6.0.9 sha=00000000:0 malloc=jemalloc-5.1.0 bits=64 build=12c354e6793cb936
 ```
-</detail>
+</details>
