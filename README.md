@@ -95,6 +95,18 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 ## Usage
 
 ```
-0 Register your domain with DNS(Domain Name System) Server.
+0. Register your domain with DNS(Domain Name System) Server.
+1. Config .env file
+  see and edit parameters.
+2. run nginx-proxy
+  $cd proxy/
+  $docker-compose --build -d
+3. Start up laravel.example.com
+  $cd example.com/laravel
+  $docker-compose --build -d
+4. login app container and install Laravel8
+  $docker exec -it sv-laravel-example bash
+  $/tmp/setup_laravel.sh
+
 
 ````
