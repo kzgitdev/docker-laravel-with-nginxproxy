@@ -86,9 +86,16 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 </details>
 
 ## 使い方
-
+<details><summary>準備</summary>
+<div>
+ 
+ ```
 1 .envに必要な環境変数を記述します
 2 nginx-proxy を起動します
 proxy/docker-compose --build -d
 3 aaaa
-
+ 
+ ```
+ 
+</div>
+</details>
