@@ -148,9 +148,11 @@ phpinfo();
  <details><summary>redisサーバ起動の確認</summary>
  <div>
  ```
+  
   $ docker exec -it sv-laravel-redis bash
   # redis-server -v
 Redis server v=6.0.9 sha=00000000:0 malloc=jemalloc-5.1.0 bits=64 build=12c354e6793cb936
- ```
+
+```
 </div>
 </details>
