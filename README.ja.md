@@ -3,10 +3,10 @@
 ## 概要
 
 nginx-proxy(jwilder/nginx-proxy:latest)をリバースプロキシとして活用し、バックエンドサーバーにLarvel8を配置する構成です。
-docker-composeで各コンテナをセットアップします。大まか流れは下記の通り。
-- composerのインストール
-- 一般ユーザーを追加
-- Docker起動後にsetup_laravel.shシェルスクリプトでLaravelをインストール
+docker-compose.ymlで各コンテナをセットアップします。下記の作業が含まれます。
+- composerのインストールする
+- 一般ユーザーを追加する
+- Laravelをインストールするsetup_laravel.shシェルスクリプトをコンテナにCOPYする
 
 
 ## 開発環境
