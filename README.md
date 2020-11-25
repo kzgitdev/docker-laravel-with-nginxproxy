@@ -84,7 +84,7 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 |               +-- php.ini
 |               +-- setup_laravel.sh
 |       +-- /db <= mount point: /var/lib/mysql
-|       +-- /src <= laravel install dir
+|       +-- /src <= laravel install dir mount in /var/www/html
 |       +-- .env
 |       +-- docker-compose.yml
 ```
