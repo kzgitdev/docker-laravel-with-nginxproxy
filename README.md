@@ -62,10 +62,7 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 </div>
 </details>
 
-
 ## Directory structure
-## Directory structure
-
 <details><summary>ディレクトリ構成</summary>
 <div>
 
