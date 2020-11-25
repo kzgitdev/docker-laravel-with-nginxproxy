@@ -109,8 +109,35 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
   $docker-compose --build -d
 
 4. login app container and install Laravel8 using shell script.
-  $docker exec -it sv-laravel-example bash
+  $docker exec -it sv-laravel-app bash
   $/tmp/setup_laravel.sh
 
 ````
+## Check containers operation
+
+<detail><summary>Check installed modules in PHP:7.4-FPM</summary>
+<div>
+
+```
+/src/public/index.php
+add php code
+
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request using
+| the application's HTTP kernel. Then, we will send the response back
+| to this client's browser, allowing them to enjoy our application.
+|
+*/
+// add here
+phpinfo();
+
+```
+access http://laravel.example.com with web browser.
+
+</div>
+</detail>
 
