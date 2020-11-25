@@ -112,8 +112,8 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 </div>
 </details>
 
-## phpモジュールの確認
-<details>
+## 動作確認
+<details><summary>PHPインストール済みモジュールの確認</summary>
 <div>
  
 ```
@@ -136,3 +136,10 @@ phpinfo();
  
 </div>
 </details>
+
+<details><summary>adminer確認</summary>
+<div>
+ ブラウザから　http://admr.laravel.example.com　にアクセスする
+ 
+ </div>
+ </details>
