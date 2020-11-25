@@ -94,5 +94,7 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 
 ## Usage
 
+```
 0 Register your domain with DNS(Domain Name System) Server.
 
+````
