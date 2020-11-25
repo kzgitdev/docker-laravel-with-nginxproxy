@@ -65,25 +65,21 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 |   +-- /log
 |       +-- /nginx
 |           +-- access.log
-|           +-- errir.log
+|           +-- error.log
 |   +-- docker-compose.yml
 +-- /example.com
-|   +-- /app1
-|   +-- begin-with-the-crazy-ideas.textile
-|   +-- on-simplicity-in-technology.markdown
-+-- _includes
-|   +-- footer.html
-|   +-- header.html
-+-- _layouts
-|   +-- default.html
-|   +-- post.html
-+-- _posts
-|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
-+-- _data
-|   +-- members.yml
-+-- _site
-+-- index.html
+|   +-- /laravel // <= subdomain: laravel.example.com
+|       +-- /build
+|           +-- /nginx
+|               +-- default.conf
+|           +-- /php
+|               +-- Dockerfile
+|               +-- php.ini
+|               +-- setup_laravel.sh
+|       +-- /db // <= mount point: /var/lib/mysql
+|       +-- /src // laravel install dir
+|       +-- .env
+|       +-- docker-compose.yml
 ```
 
 </div>
