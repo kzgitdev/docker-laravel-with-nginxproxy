@@ -58,10 +58,10 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 ## コンテナ
 <details><summary>ディレクトリ構成</summary>
 <div>
-/docker
- 
-+-- /proxy
 
+```
+/docker
++-- /proxy
 |   +-- /log
 |       +-- /nginx
 |           +-- access.log
@@ -84,6 +84,8 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 |   +-- members.yml
 +-- _site
 +-- index.html
+```
+
 </div>
 </details>
 
