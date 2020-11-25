@@ -163,7 +163,7 @@ access http://admr.laravel.example.com with web browser.
 </details>
 
 
-<details><summaryCheck redis server operation</summary>
+<details><summary>Check redis server operation</summary>
 <div>
 login redis server and check version.
 
