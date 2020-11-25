@@ -138,6 +138,21 @@ phpinfo();
 </div>
 </details>
 
+
+<details><summary>MariaDBサーバ起動の確認</summary>
+<div>
+コンテナにログインしてMariaDBのバージョンを確認する
+
+```
+$ docker exec -it sv-laravel-db bash
+# mysql -V
+mysql  Ver 15.1 Distrib 10.5.8-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
+
+```
+
+</div>
+</details>
+
 <details><summary>adminer起動の確認</summary>
 <div>
  ブラウザから　http://admr.laravel.example.com　にアクセスする
@@ -147,9 +162,9 @@ phpinfo();
  
 <details><summary>redisサーバ起動の確認</summary>
 <div>
-  
+コンテナにログインしてredis serverのバージョンを確認する
+
 ```
-  
 $ docker exec -it sv-laravel-redis bash
 # redis-server -v
 Redis server v=6.0.9 sha=00000000:0 malloc=jemalloc-5.1.0 bits=64 build=12c354e6793cb936
