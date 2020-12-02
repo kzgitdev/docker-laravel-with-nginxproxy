@@ -41,7 +41,7 @@ services:
     container_name: sv-laravel-db
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /db/:/var/lib/mysql
+      - ./db/:/var/lib/mysql
     environment: 
       - MYSQL_DATABASE=$MYSQL_DATABASE
       - MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD
