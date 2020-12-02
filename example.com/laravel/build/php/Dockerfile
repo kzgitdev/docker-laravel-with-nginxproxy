@@ -8,7 +8,7 @@ ENV USERNAME=$USERNAME
 ENV UID=$UID
 
 RUN apt-get update && \
-    apt-get install -y zip unzip git curl libzip-dev libmcrypt-dev libonig-dev mariadb-client openssl
+    apt-get install -y zip unzip git curl libzip-dev libmcrypt-dev libonig-dev mariadb-client openssl nodejs npm
 
 RUN git clone https://github.com/phpredis/phpredis.git /usr/src/php/ext/redis && \
     docker-php-ext-install pdo_mysql redis
