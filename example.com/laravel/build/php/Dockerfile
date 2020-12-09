@@ -9,11 +9,10 @@ ENV UID=$UID
 
 RUN apt-get update && \
     apt-get install -y zip unzip git curl libzip-dev libmcrypt-dev libonig-dev mariadb-client openssl npm
-    
 
 RUN git clone https://github.com/phpredis/phpredis.git /usr/src/php/ext/redis && \
-    docker-php-ext-install pdo_mysql redis && \
-    docker-php-ext-enable mysqli pdo_mysql && \
+    docker-php-ext-install pdo_mysql mysqli redis && \
+    docker-php-ext-enable mysqli pdo_mysql redis && \
     curl -sL https://deb.nodesource.com/setup_14.x -o /tmp/nodesource_setup.sh && chmod +x /tmp/nodesource_setup.sh && \
     /bin/bash /tmp/nodesource_setup.sh && \
     apt-get install -y nodejs
@@ -36,5 +35,3 @@ RUN chmod +x /tmp/setup_laravel.sh
 
 USER $USERNAME
 WORKDIR /var/www/html
-
-
